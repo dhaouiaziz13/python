@@ -51,7 +51,7 @@ while True:
             dropdown = driver.find_element_by_css_selector(element)
             dropdown.click()
 
-            name = "DHAOUI MED AZIZ"
+            name = "DHAOUI MED AZIZ" #your name here
             list_element = "//div[@class='exportSelectPopup quantumWizMenuPaperselectPopup appsMaterialWizMenuPaperselectPopup']//span[text()='"+name+"']"
 
             dropdown_element = driver.find_element_by_xpath(list_element)

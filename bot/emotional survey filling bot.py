@@ -12,14 +12,16 @@ result = pyfiglet.figlet_format(copyright, font = "slant" )
 print(result.center(50))
 
 print('do not close browser window it will be automatically minimized\nif you do the session will end and the program will quit')
-
-print(Fore.RED+'session started')
+initialize=base64.b64decode('aW5pdGlhbGl6aW5nLi4u').decode('utf-8')
+sesion=base64.b64decode('c2Vzc2lvbiBzdGFydGVk').decode('utf-8')
+work=base64.b64decode('d29ya2luZy4uLi4=').decode('utf-8')
+print(Fore.RED+sesion)
 t.sleep(2)
-print(Fore.RED+'initializing driver ')
+print(Fore.RED+initialize)
 for i in range(5):
     print('.')
     t.sleep(1)
-print(Fore.GREEN+'working...')
+print(Fore.GREEN+work)
 
 
 while True:

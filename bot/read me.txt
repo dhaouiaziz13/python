@@ -1,0 +1,5 @@
+the following libraries need to be installed or the program wont work:
+selenium 
+colorama 
+pyfiglet
+pygame

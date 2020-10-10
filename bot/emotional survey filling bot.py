@@ -5,6 +5,8 @@ from datetime import datetime
 from colorama import Fore,init
 import pyfiglet
 import base64
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
 pygame.mixer.init()
 init(autoreset=True,convert=True)

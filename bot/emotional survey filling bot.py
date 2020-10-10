@@ -33,7 +33,7 @@ while True:
 
     time=datetime.now()
     now =time.strftime("%H:%M:%S")
-    if (now=="10:01:20" or now=="15:00:00" ) :
+    if (now=="11:00:20" or now=="14:20:03" ) :
         pygame.mixer.Sound.play(sound)
         pygame.mixer.music.stop()
         PATH = "C:/Users/dhaou/Desktop/chromedriver.exe"
@@ -64,18 +64,21 @@ while True:
             dropdown_element.click()
 
         t.sleep(2)
+
+        choices=['//*[@id="i18"]/div[3]','//*[@id="i21"]/div[3]']
+        choice=random.choice(choices)
         with open('log.txt','a') as file:
             if choice==choices[0]:
                 file.write(f'survey done at {now} choosed 4\n')
             else:
                 file.write(f'survey done at {now} choosed 5\n')
+
         j=0
         while j<3:
             j+=1
             try:
 
-                choices=['//*[@id="i18"]/div[3]','//*[@id="i21"]/div[3]']
-                choice=random.choice(choices)
+
                 cli=driver.find_element_by_xpath(choice)
                 cli.click()
                 confrim= driver.find_element_by_css_selector('#mG61Hd > div.freebirdFormviewerViewFormCard.exportFormCard > div > div.freebirdFormviewerViewNavigationNavControls > div > div > div')
@@ -84,5 +87,5 @@ while True:
             except Exception as e:
                 break
 
-        t.sleep(2)
+        t.sleep(1)
         driver.minimize_window()

@@ -26,8 +26,8 @@ while True:
 
 
     time=datetime.now()
-    now =time.strftime("%H:%M")
-    if (now=="10:01" or now=="15:00" ) :
+    now =time.strftime("%H:%M:%S")
+    if (now=="10:01:20" or now=="15:00:00" ) :
         PATH = "C:/Users/dhaou/Desktop/chromedriver.exe"
         driver = webdriver.Chrome(PATH)
         url = "https://docs.google.com/forms/d/e/1FAIpQLSe61r6TNx4JvRg2gVu3Eu8-KYKCvd1dJCAmYJFnNw4EU9llMw/viewform"

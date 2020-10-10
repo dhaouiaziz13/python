@@ -1,7 +1,7 @@
 import pyfiglet
 from colorama import Fore,Back,init
 import base64
-
+init(autoreset=True,convert=True,)
 #dont forget to istall the needed libraries(pyfiglet,colorama) using : pip install <librarie name>
 styles={'1':"digital",'2':"bulbhead",'3':"bubble",'4':"dotmatrix",'5':"alligator",'6':"letters",'7':"isometric1",'8':"doh",'9':"banner3-D",'10':"alphabet",'11':"5lineoblique",'12':"3x5",'13':"3-d",'14':"slant"}
 
@@ -13,7 +13,7 @@ print(Fore.BLUE+name.center(50))
 init(autoreset=True,convert=True)
 
 while True:
-    text=input(Fore.MAGENTA+'type something :')
+    text=input(Fore.GREEN+'type something :')
     text=str(text)
     if text :
         break

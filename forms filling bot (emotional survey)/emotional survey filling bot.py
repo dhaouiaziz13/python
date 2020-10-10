@@ -36,7 +36,7 @@ while True:
     if (now=="11:00:20" or now=="14:20:03" ) :
         pygame.mixer.Sound.play(sound)
         pygame.mixer.music.stop()
-        PATH = "C:/Users/dhaou/Desktop/chromedriver.exe"
+        PATH = "chromedriver.exe"
         driver = webdriver.Chrome(PATH)
         url = "https://docs.google.com/forms/d/e/1FAIpQLSe61r6TNx4JvRg2gVu3Eu8-KYKCvd1dJCAmYJFnNw4EU9llMw/viewform"
         driver.get(url)

@@ -5,6 +5,7 @@ from datetime import datetime
 from colorama import Fore,init
 import pyfiglet
 import base64
+import pygame
 pygame.mixer.init()
 init(autoreset=True,convert=True)
 sound=pygame.mixer.Sound('er.wav')

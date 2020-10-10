@@ -79,5 +79,5 @@ while True:
             except Exception as e:
                 break
 
-        t.sleep(4)
+        t.sleep(2)
         driver.minimize_window()

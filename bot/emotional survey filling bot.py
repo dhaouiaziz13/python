@@ -64,6 +64,11 @@ while True:
             dropdown_element.click()
 
         t.sleep(2)
+        with open('log.txt','a') as file:
+            if choice==choices[0]:
+                file.write(f'survey done at {now} choosed 4\n')
+            else:
+                file.write(f'survey done at {now} choosed 5\n')
         j=0
         while j<3:
             j+=1

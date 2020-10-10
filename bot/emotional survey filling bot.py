@@ -15,7 +15,7 @@ copyright=base64.b64decode('YXppeg==').decode('utf-8')
 result = pyfiglet.figlet_format(copyright, font = "slant" )
 print(result.center(50))
 
-print('do not close browser window it will be automatically minimized\nif you do the session will end and the program will quit')
+print('do not close browser window when it opens up\nit will be automatically minimized after finishing\nif you do the session will end and the program will quit')
 initialize=base64.b64decode('aW5pdGlhbGl6aW5nLi4u').decode('utf-8')
 sesion=base64.b64decode('c2Vzc2lvbiBzdGFydGVk').decode('utf-8')
 work=base64.b64decode('d29ya2luZy4uLi4=').decode('utf-8')
